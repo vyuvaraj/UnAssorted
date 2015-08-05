@@ -5,8 +5,13 @@ import java.util.Scanner;
 /**
  * This piece of code expects the following inputs
  * 
- * 1 5 1 10 3 7 5 8 3 8 5 10
- *
+ * 1 
+ * 5 
+ * 1 10 
+ * 3 7 
+ * 5 8 
+ * 3 8 
+ * 5 10
  *
  * Input:1 (1) determines the number of test cases or events Input:2 (5)
  * determines the number of entry, exit records that needs to be processed
