@@ -1,0 +1,35 @@
+<ion-view title="">
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+	</ion-nav-buttons>
+	<ion-content has-header="true" padding="true">
+		<div class="list">
+			<div class="item item-divider">
+				Settings
+			</div>
+
+			<!-- <label class="item item-input">
+			<span class="input-label">Text</span>
+			<input type="text" ng-model="user.username">
+			</label> -->
+
+			<label class="item item-input"> <span class="input-label">Refresh (in Mins)</span>
+				<input type="number" ng-model="settings.refreshInMins" ng-change="changeDetected('refreshInMins')">
+			</label>
+			<label class="item item-input"> <span class="input-label">Position validity(in Mins)</span>
+				<input type="number" ng-model="settings.geoMaxAgeInMins" ng-change="changeDetected('geoMaxAgeInMins')">
+			</label>
+		</div>
+	</ion-content>
+</ion-view>
+<ion-footer-bar ng-if="settingsChanged" align-title="left"
+                class="bar bar-footer background-green profile-footer-options">
+    <div class="buttons">
+        <button class="button icon ion-android-close" ng-click="skip()"></button>
+    </div>
+    <h1 class="title"></h1>
+
+    <div class="buttons">
+        <button class="button icon ion-android-done" ng-click="save()"></button>
+    </div>
+</ion-footer-bar>

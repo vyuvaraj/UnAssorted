@@ -1,0 +1,30 @@
+/* Empty. Add your own CSS if you like */
+
+ion-popover-view.fit {
+  height: auto !important;
+  width: auto !important;
+}
+
+ion-popover-view.fit ion-content {
+  position: relative !important;
+}
+
+.platform-android ion-popover-view.fit {
+  margin-top: 10px !important;
+}
+
+map {
+	width: 100%;
+	height: 100% !important;
+}
+
+.scroll, .map-canvas {
+	height: 100%;
+	width: 100%;
+}
+
+html, body, #map-canvas {
+	height: 100%;
+	margin: 0px;
+	padding: 0px
+}

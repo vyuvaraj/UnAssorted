@@ -1,0 +1,27 @@
+<ion-view title="My Location">
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+	</ion-nav-buttons>
+	<ion-content has-header="true" padding="true">
+		<div class="list">
+			<div class="item item-divider">
+				Your Current Location
+			</div>
+			<div class="item">Lattitude : {{pos.lattitude}}</div>
+			<div class="item">Longtitude : {{pos.longtitude}}</div>
+			<br/>
+			<div class="item item-divider">
+				Select your mode of Travel
+			</div>
+			<ion-radio ng-model="travelChoice" ng-value="'bus'">
+				Bus or Car
+			</ion-radio>
+			<ion-radio ng-model="travelChoice" ng-value="'rail'">
+				Train
+			</ion-radio>
+			<button class="button icon" ng-click="setDestination()">
+				Set Destination
+			</button>
+		</div>
+	</ion-content>
+</ion-view>
